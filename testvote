@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="footer.css">
+  <link rel="stylesheet" type="text/css" href="nav.css">
+  <title>vote</title>
+<style>
+table {
+  width:100%;
+}
+table, th, td {
+
+  border: 3px solid black;
+  border-spacing: 10px;
+
+
+}
+th{
+  padding: 20px;
+  text-align: justify;
+}
+
+</style>
+</head>
+  <body style="background-color:pink;">
+    <header>
+      <img src="tnelelogo.jpg" width="1328" height="250">
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Our services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="os1.html">To know your voter id NO</a>
+            <a href="#">To know your contesting candidate</a>
+          </div>
+          </div>
+          <div class="dropdown">
+          <button class="dropbtn">Political Parties
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="admk.html">ADMK</a>
+            <a href="dmk.html">DMK</a>
+            <a href="ntk.html">NTK</a>
+            <a href="mnm.html">MNM</a>
+          </div>
+          </div>
+          <div class="topnav-right">
+        <a href="about.html">About</a>
+      </div>
+      </div>
+    </header>
+    <section>
+<table>
+    <caption><h1>vote the candidates</h1></caption>
+  <tr>
+
+   <th>
+  <img src="admklogo.jpg" style="width:200px;height:170px;"/>
+
+       Nainar Mohamed
+
+   <input type="submit" value="VOTE!" onclick="alert ('Voted Successfully!!')">
+ </th>
+    <th>
+         <img src="dmklogo.jpg" style="width:200px;height:170px;"/>
+
+    Akash Manikandan
+
+        <input type="submit" value="VOTE!" onclick="alert ('Voted Successfully!!')">
+
+      </th>
+    <th>
+        <img src="ntklogo.jpg" style="width:200px;height:170px;"/>
+
+
+            Rahul
+
+        <input type="submit" value="VOTE!" onclick="alert ('Voted Successfully!!')">
+
+      </th>
+
+  </tr>
+  <center>
+  <tr>
+    <th>
+        <img src="mnmlogo.jpg" style="width:200px;height:170px;"/>
+         Nisanth
+
+        <input type="submit" value="VOTE!" onclick="alert ('Voted Successfully!!')">
+
+     </th>
+    <th>
+        <img src="notalogo.jpg" style="width:200px;height:170px;"/>
+
+        Siva
+
+        <input type="submit" value="VOTE!" onclick="alert ('Voted Successfully!!')">
+      </th>
+  </tr>
+</center>
+</table>
+</section>
+<br></br>
+<!-- Start Footer Coding-->
+ <footer>
+ <div class="w-80">
+ <div class="footer-box">
+   <u><h2>Email</h2></u>
+   <a>email id: tne@gov.in</a>
+   </div>
+   <div class="footer-box">
+   <u><h2>Fax</h2></u>
+   <a>045-12345678</a>
+   </div>
+   <div class="footer-box">
+   <u><h2>Toll Free Number</h2></u>
+   <a>01020304</a>
+   </div>
+   <div class="footer-box">
+   <u><h2>Address</h2></u>
+   <a> IT-VCET,</a>
+   <a>Viraganoor,</a>
+   <a>Madurai west </a>
+   </div>
+ </div>
+ </footer>
+</body>
+</html>

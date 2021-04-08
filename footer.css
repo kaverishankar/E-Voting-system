@@ -1,0 +1,29 @@
+
+footer{
+width: 100%;
+
+background: linear-gradient(to right, #005c66 0%, #ffb066 100%);
+
+float: left;
+color: white;
+padding: 10px ;
+}
+
+footer .footer-box{
+width: 25%;
+float: left;
+height: 29%;
+}
+
+footer .footer-box a{
+display: block;
+color: white;
+font-size: 20px;
+text-transform: capitalize;
+}
+footer .footer-box a:hover{
+text-decoration: none;
+color: #ffb566 ;
+
+}
+

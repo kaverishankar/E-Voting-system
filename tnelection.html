@@ -1,0 +1,158 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="footer.css">
+  <link rel="stylesheet" type="text/css" href="nav.css">
+  <style>
+  
+  p.time{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+  }
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+ul.b {
+  list-style-type: square;
+}
+</style>
+<script type="text/javascript">
+function validate()
+{
+  if(ins.accept.checked=="")
+  {
+    alert("please accept the instructions!!");
+return false;
+}
+alert("YOU accepted the instructions!! click OK to continue");
+}
+</script>
+
+<title>tnelection</title>
+<center
+</head>
+<body style="background-color:lightcyan;">
+
+  <header>
+<img src="tnelelogo.jpg" width="1328" height="250">
+<marquee bgcolor="orange" style="color:blue"><b> ONLINE VOTING SYSTEM</b> || இணையதள வாக்களிப்பு</marquee>
+<div class="navbar">
+  <a href="tnelection.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Our services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="os2.php">To know your voter id NO</a>
+    </div>
+    </div>
+    <div class="dropdown">
+    <button class="dropbtn">Political Parties
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="admk.html">ADMK</a>
+      <a href="dmk.html">DMK</a>
+      <a href="ntk.html">NTK</a>
+      <a href="mnm.html">MNM</a>
+      <a href="bjp.html">BJP</a>
+    </div>
+    </div>
+    <div class="topnav-right">
+  <a href="about.html">About</a>
+</div>
+</div>
+</header>
+<br></br>
+<section>
+  <p  id="demo" class="time"></p>
+    <script>
+
+    // Set the date we're counting down to
+    var countDownDate = new Date("march 20, 2021 21:29:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function timer() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML =  hours + "hr: "
+      + minutes + "min :" + seconds + "Sec ";
+
+
+      // If the count down is over, write some text
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "TIME OVER";
+
+      }
+    }, 1000);
+    </script>
+  <nav>
+  <center>
+    <h1 style="text-shadow:2px 2px #ff8400; font-size:50px;"> <a href="result.php">*Live Results*</a></h1>
+  </center>
+   </nav>
+   <div class="center">
+   <form name="ins"  onsubmit="return validate()" action="Checkdetails.php">
+     <h1 style="text-align:center; color:crimson; font-size:30px;">INSTRUCTIONS FOR VOTING</h1>
+     <ul class="b">
+     <li>The voters shold enter their respective voter identity No,Aadhaar No and mobile No(only mobile no linked with aadhaar)</li>
+       <li>The voters should select therir respective District,Constituency.</li>
+       <li>If the voters did not know their voter id No, they can be know their voter id No by our services.</li>
+       <li>the voting members kindly check your details before verification</li>
+       <li>The voting process starts from 9:00AM and ends at 5:00PM, you are requested to vote within the time frame.</li>
+       <li>Once the mobile no is entered nd send OTP button is clicked OTP code will be send to entered mobile no.</li>
+       <li>The voters will only able to click their vote botton only once and their vote will be counted automatically to result page.</li>
+       <li>Once voting is completed , the already voted member cannot vote again</li>
+     </ul>
+     <input type="checkbox" id="accept" name="accept" value="accept">
+   <label for="accept" style="color:blue;">I accept the instructions</label><br>
+   <center><button type="submit" name="submit" value="Submit">Continue</button></center>
+   </form>
+   </div>
+   </p>
+</section>
+
+<!-- Start Footer Coding-->
+ <footer>
+ <div class="w-80">
+ <div class="footer-box">
+   <u><h2>Email</h2></u>
+   <a>email id: tne@gov.in</a>
+   </div>
+   <div class="footer-box">
+   <u><h2>Fax</h2></u>
+   <a>045-12345678</a>
+   </div>
+   <div class="footer-box">
+   <u><h2>Toll Free Number</h2></u>
+   <a>01020304</a>
+   </div>
+   <div class="footer-box">
+   <u><h2>Address</h2></u>
+   <a> vikram,</a>
+   <a>enathi,</a>
+   <a>sivagangai </a>
+   </div>
+ </div>
+ </footer>
+ <!-- End footer Coding-->
+ </body>
+ </html>

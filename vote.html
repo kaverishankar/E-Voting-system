@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="footer.css">
+  <link rel="stylesheet" type="text/css" href="nav.css">
+  <link rel="stylesheet" type="text/css" href="radio.css">
+  <title>vote</title>
+<style>
+.button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+table {
+  width:100%;
+}
+table, th, td {
+
+  border: 3px solid black;
+  border-spacing: 10px;
+
+
+}
+th{
+  padding: 20px;
+  text-align: justify;
+}
+
+</style>
+</head>
+  <body style="background-color:pink;">
+    <header>
+      <img src="tnelelogo.jpg" width="1328" height="250">
+      <div class="navbar">
+        <a href="tnelection.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Our services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="os1.html">To know your voter id NO</a>
+            <a href="#">To know your contesting candidate</a>
+          </div>
+          </div>
+          <div class="dropdown">
+          <button class="dropbtn">Political Parties
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="admk.html">ADMK</a>
+            <a href="dmk.html">DMK</a>
+            <a href="ntk.html">NTK</a>
+            <a href="mnm.html">MNM</a>
+          </div>
+          </div>
+          <div class="topnav-right">
+        <a href="about.html">About</a>
+      </div>
+      </div>
+    </header>
+    <section>
+      <form action="result.php" method="post">
+<table>
+    <caption><h1>vote the candidates</h1></caption>
+  <tr>
+
+   <th>
+     <label for="">
+  <img src="admklogo.jpg" style="width:200px;height:170px;"/>
+<input type="radio" class="radio" name="selectedCandidate" value="ADMK" ><strong>ADMK</strong>
+ </label>
+ </th>
+    <th>
+      <label for="">
+         <img src="dmklogo.jpg"  style="width:200px;height:170px;"/>
+         <input type="radio" class="radio" name="selectedCandidate" value="DMK" ><strong>DMK</strong>
+</label>
+      </th>
+    <th>
+      <label for="">
+        <img src="ntklogo.jpg" style="width:200px;height:170px;"/>
+        <input type="radio" class="radio" name="selectedCandidate" value="NTK" ><strong>NTK</strong>
+</label>
+      </th>
+
+  </tr>
+  <center>
+  <tr>
+    <th>
+      <label for="">
+        <img src="mnmlogo.jpg" style="width:200px;height:170px;"/>
+    <input type="radio" class="radio" name="selectedCandidate" value="MNM" ><strong>MNM</strong>
+</label>
+     </th>
+    <th>
+      <label for="">
+        <img src="bjplogo.jpg" style="width:200px;height:170px;"/>
+        <input type="radio" class="radio" name="selectedCandidate" value="BJP" ><strong>BJP</strong>
+        </label>
+      </th>
+      <th>
+        <label for="">
+          <img src="notalogo.jpg" style="width:200px;height:170px;"/>
+          <input type="radio" class="radio" name="selectedCandidate" value="NOTA" ><strong>NOTA</strong>
+          </label>
+        </th>
+  </tr>
+</center>
+</table>
+<br>
+<center>
+<button type="submit" name="vote" class="button"><strong>VOTE</strong></button>
+</center>
+</form>
+</section>
+<br></br>
+<!-- Start Footer Coding-->
+ <footer>
+ <div class="w-80">
+ <div class="footer-box">
+   <u><h2>Email</h2></u>
+   <a>email id: tne@gov.in</a>
+   </div>
+   <div class="footer-box">
+   <u><h2>Fax</h2></u>
+   <a>045-12345678</a>
+   </div>
+   <div class="footer-box">
+   <u><h2>Toll Free Number</h2></u>
+   <a>01020304</a>
+   </div>
+   <div class="footer-box">
+   <u><h2>Address</h2></u>
+   <a>VCET,</a>
+   <a>Viraganoor,</a>
+   <a>Madurai</a>
+   </div>
+ </div>
+ </footer>
+</body>
+</html>
